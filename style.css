@@ -259,26 +259,92 @@ main{
      border-radius: 15px;
      padding: 10px 40px;
      color: white;
-     margin-top: 50px;
+     margin-top: 60px;
+     margin-bottom: 50px;
 }
 .padding{
     padding: 15px;
     font-size: 1rem;
     font-weight: 700;
 }
+/* footer start */
+
+footer{
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+.footer-div{
+    display: flex;
+    background-color:#01ACFD ;
+    height: 200px;
+    padding: 100px;
+    padding-bottom: 150px;
+    justify-content: space-between;
+}
+.footer-footer{
+    display: flex;
+    margin-top: 35px;
+}
+.footer-div2{
+    width: 400px;
+}
+.footer-h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    border-top: -50px;
+}
+.div-footer-h3{
+    margin-top: -50px;
+    margin-left: 15px;
+}
+.img-src{
+background-color: white;
+height: 80px;
+width: 80px;
+}
+.letsgo{
+    font-size: 1.2rem;
+    color: white;
+}
+.letsgo-go{
+    margin-top: -50px;
+}
+.footer-div3{
+    display: grid;
+}
+.hhh-h{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.hhh{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+}
+.footer-div4{
+    color: white;
+}
+
 /* phone size */
 @media screen and (max-width:576px) {
     .nav-h2, .nav-ul, .nav-button, .main-h1, .section-work{
         display: none;
     }
     body{
-        width: 357px;
+        width: 360px;
+
     }
     
     #span{
         display: block;
         font-size: 30px;
         margin-left: 230px; 
+        max-width: 100%;
     }
     .header-img-pro{
         height: 450px;
@@ -296,12 +362,14 @@ main{
         grid-template-columns: 1fr;
     }
     .main-div2 , .main-div3, .main-div4{
+        justify-items: center;
         width: 250px;
         margin-top: 20px;
     }
 
     .section-div{
         width: 360px;
+        justify-items: center;
     }
     .find-out{
         width: 170px;
@@ -327,5 +395,16 @@ main{
     }
     .div-btn{
         border-radius: 25px;
+    }
+    .footer-div{
+        flex-direction: column;
+        height: 550px;
+    }
+    .letsgo{
+        padding-right: 100px;
+    }
+    .footer-div2, .footer-div3, .footer-div4{
+        margin-left: -60px;
+        margin-top: -50px;
     }
 }
